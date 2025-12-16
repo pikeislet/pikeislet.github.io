@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Johan - Lead AI Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1d4ed8", // A more subdued blue
+            secondary: "#64748b", // A neutral gray for secondary elements
+            background: "#f8fafc", // Very light gray background
+            "background-dark": "#0f172a", // Dark charcoal background
+            text: "#1e293b", // Dark text
+            "text-dark": "#e2e8f0", // Light text for dark mode
+            card: "#ffffff", // White cards
+            "card-dark": "#1e293f", // Slightly off-black dark cards
+            border: "#e2e8f0", // Light border
+            "border-dark": "#334155" // Darker border for dark mode
+          },
+          fontFamily: {
+            display: ["Inter", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.6rem", // Slightly larger default border-radius
+            lg: "1rem"
+          },
+          boxShadow: {
+            'custom-light': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+            'custom-dark': '0 4px 10px -2px rgba(0, 0, 0, 0.3), 0 2px 6px -1px rgba(0, 0, 0, 0.2)',
+            'card-hover-light': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+            'card-hover-dark': '0 10px 20px -4px rgba(0, 0, 0, 0.4), 0 6px 10px -3px rgba(0, 0, 0, 0.3)'
+          }
+        },
+      },
+    };
+  </script>
+<style>
+    .material-icons {
+      font-size: inherit;
+      line-height: inherit;
+      vertical-align: middle;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    @media (min-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body class="bg-background dark:bg-background-dark font-display text-text dark:text-text-dark transition-colors duration-300">
+<header class="fixed top-0 left-0 right-0 z-50 bg-background/90 dark:bg-background-dark/90 backdrop-blur-sm shadow-custom-light dark:shadow-custom-dark">
+<div class="container mx-auto px-6 py-5 flex justify-between items-center">
+<a class="text-2xl font-extrabold text-primary" href="#">Johan Hammarström</a>
+<nav class="hidden md:flex items-center space-x-10">
+<a class="text-lg font-medium hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-lg font-medium hover:text-primary transition-colors" href="#expertise">Expertise</a>
+<a class="text-lg font-medium hover:text-primary transition-colors" href="#projects">Projects</a>
+<a class="text-lg font-medium hover:text-primary transition-colors" href="#contact">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button class="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" id="theme-toggle">
+<span class="material-icons text-2xl">light_mode</span>
+<span class="material-icons hidden text-2xl">dark_mode</span>
+</button>
+<button class="md:hidden p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+<span class="material-icons text-2xl">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-24">
+<section class="relative min-h-[70vh] flex items-center" id="hero">
+<div class="absolute inset-0 opacity-5 dark:opacity-10" style="background-color: #1e3a8a;"></div>
+<div class="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between relative z-10">
+<div class="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
+<h1 class="text-5xl lg:text-7xl font-extrabold mb-4 leading-tight text-text dark:text-text-dark">Intelligent Solutions <span class="text-primary">Engineered.</span></h1>
+<h2 class="text-3xl lg:text-4xl font-semibold mb-8 text-secondary dark:text-gray-400">Johan Hammarström - Lead AI Engineer</h2>
+<p class="text-lg lg:text-xl mb-10 text-gray-700 dark:text-gray-300 leading-relaxed">Driving innovation through advanced Artificial Intelligence. Specializing in machine learning, NLP, and computer vision to solve complex business challenges.</p>
+<div class="flex justify-center lg:justify-start space-x-6">
+<a class="bg-primary text-white font-semibold py-3 px-8 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-300 text-lg inline-flex items-center shadow-lg" href="#contact">
+            Connect <span class="material-icons ml-2 text-xl">link</span>
+</a>
+<a class="border-2 border-primary text-primary font-semibold py-3 px-8 rounded-lg hover:bg-primary hover:text-white transition-all duration-300 text-lg inline-flex items-center" href="#projects">
+            View Work
+</a>
+</div>
+</div>
+<div class="lg:w-1/2 relative">
+<img alt="Johan, Lead AI Engineer at work" class="rounded-lg shadow-2xl w-full h-auto object-cover transform scale-100 hover:scale-105 transition-transform duration-500 border-4 border-primary/50" src="./1753041947063_2.jpeg"/>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background dark:bg-background-dark" id="about">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl lg:text-5xl font-bold text-center mb-16 text-text dark:text-text-dark">About Johan</h2>
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/3">
+<img alt="Abstract representation of AI concepts" class="rounded-lg shadow-custom-light dark:shadow-custom-dark w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCccyp-tCavlWTgsA1ob_HMM9eEIywGQTqo5uenV1Ur9XQV-jERa3iqfcVMqN8u4MHv9AbHhIKDlh7GRzpSOMHOtM0Slg_50CtCzKlN_vZ0mZk3gpO5UxKPhsfDtosk9m0EDUybeyS5Gy3ZPNSVVgJoQMMSRvi93R5SQWZ30q1Z8vtUI0ZFzwm71TK1_DMqpcUDnMaL6aQIm_7Z81ny5zZpp-TIMcsugf3bOaTq82cwwn7pXU4DNEzxvOKUW7eKiiylxbYL2utRZxpb"/>
+</div>
+<div class="lg:w-2/3">
+<p class="text-lg lg:text-xl mb-6 text-gray-700 dark:text-gray-300 leading-relaxed">With a distinguished career spanning over a decade, I am a Lead AI Engineer focused on translating intricate challenges into elegant, AI-powered solutions. My expertise lies in the core pillars of modern AI, including sophisticated Machine Learning models, nuanced Natural Language Processing, and advanced Computer Vision techniques.</p>
+<p class="text-lg lg:text-xl mb-6 text-gray-700 dark:text-gray-300 leading-relaxed">My academic foundation, bolstered by a Master's in Computer Science with an AI specialization, has fueled a lifelong passion for artificial intelligence. I excel in leading high-performing teams, architecting scalable AI systems, and championing a culture of continuous learning and innovation.</p>
+<p class="text-lg lg:text-xl text-gray-700 dark:text-gray-300 leading-relaxed">Outside of my professional endeavors, I am an avid enthusiast of outdoor activities, a voracious reader of technology literature, and an active contributor to the open-source community.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-card dark:bg-card-dark" id="expertise">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl lg:text-5xl font-bold text-center mb-16 text-text dark:text-text-dark">Core Competencies</h2>
+<div class="grid-container">
+<div class="bg-background dark:bg-card-dark p-8 rounded-lg shadow-custom-light dark:shadow-custom-dark hover:shadow-card-hover-light dark:hover:shadow-card-hover-dark transition-shadow duration-300 text-center border border-border dark:border-border-dark">
+<span class="material-icons text-6xl text-primary mb-6">psychology</span>
+<h3 class="text-2xl font-bold mb-3 text-text dark:text-text-dark">Machine Learning</h3>
+<p class="text-secondary dark:text-gray-400 leading-relaxed">Design and implementation of predictive models, deep learning architectures, and reinforcement learning systems.</p>
+</div>
+<div class="bg-background dark:bg-card-dark p-8 rounded-lg shadow-custom-light dark:shadow-custom-dark hover:shadow-card-hover-light dark:hover:shadow-card-hover-dark transition-shadow duration-300 text-center border border-border dark:border-border-dark">
+<span class="material-icons text-6xl text-primary mb-6">record_voice_over</span>
+<h3 class="text-2xl font-bold mb-3 text-text dark:text-text-dark">Natural Language Processing</h3>
+<p class="text-secondary dark:text-gray-400 leading-relaxed">Advanced techniques in text analysis, language generation, sentiment analysis, and conversational AI development.</p>
+</div>
+<div class="bg-background dark:bg-card-dark p-8 rounded-lg shadow-custom-light dark:shadow-custom-dark hover:shadow-card-hover-light dark:hover:shadow-card-hover-dark transition-shadow duration-300 text-center border border-border dark:border-border-dark">
+<span class="material-icons text-6xl text-primary mb-6">visibility</span>
+<h3 class="text-2xl font-bold mb-3 text-text dark:text-text-dark">Computer Vision</h3>
+<p class="text-secondary dark:text-gray-400 leading-relaxed">Developing solutions for image recognition, object detection, semantic segmentation, and video analytics.</p>
+</div>
+<div class="bg-background dark:bg-card-dark p-8 rounded-lg shadow-custom-light dark:shadow-custom-dark hover:shadow-card-hover-light dark:hover:shadow-card-hover-dark transition-shadow duration-300 text-center border border-border dark:border-border-dark">
+<span class="material-icons text-6xl text-primary mb-6">cloud_done</span>
+<h3 class="text-2xl font-bold mb-3 text-text dark:text-text-dark">AI Infrastructure & MLOps</h3>
+<p class="text-secondary dark:text-gray-400 leading-relaxed">Expertise in deploying, scaling, and managing AI models on cloud platforms (AWS, GCP, Azure) with robust MLOps practices.</p>
+</div>
+<div class="bg-background dark:bg-card-dark p-8 rounded-lg shadow-custom-light dark:shadow-custom-dark hover:shadow-card-hover-light dark:hover:shadow-card-hover-dark transition-shadow duration-300 text-center border border-border dark:border-border-dark">
+<span class="material-icons text-6xl text-primary mb-6">groups</span>
+<h3 class="text-2xl font-bold mb-3 text-text dark:text-text-dark">Team Leadership</h3>
+<p class="text-secondary dark:text-gray-400 leading-relaxed">Proven ability to mentor engineers, define technical strategies, and foster collaborative, high-impact environments.</p>
+</div>
+<div class="bg-background dark:bg-card-dark p-8 rounded-lg shadow-custom-light dark:shadow-custom-dark hover:shadow-card-hover-light dark:hover:shadow-card-hover-dark transition-shadow duration-300 text-center border border-border dark:border-border-dark">
+<span class="material-icons text-6xl text-primary mb-6">lightbulb</span>
+<h3 class="text-2xl font-bold mb-3 text-text dark:text-text-dark">AI Strategy & Innovation</h3>
+<p class="text-secondary dark:text-gray-400 leading-relaxed">Guiding product development with AI, identifying strategic opportunities, and driving technological breakthroughs.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background dark:bg-background-dark" id="projects">
+<div class="container mx-auto px-6">
+<h2 class="text-4xl lg:text-5xl font-bold text-center mb-16 text-text dark:text-text-dark">Selected Case Studies</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div class="bg-card dark:bg-card-dark rounded-xl shadow-custom-light dark:shadow-custom-dark overflow-hidden border border-border dark:border-border-dark">
+<img alt="Case Study 1: Enterprise Conversational AI Platform" class="w-full h-72 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVy6o4C6wssUtoOH3b87oSKFqkFPUfaaZ-MHTHYU0WT_6FJPM30xkAtajO1bu44kqr8urKrNyeNE1GLGPCbiVmYuhwYmq_Hx14eEXnVbBiIqGcUpEyR7OmlcQZ2No2V0m-SxsDkKnoMsRxfwIo-Vh6DwarRmIOjF-QUG_VW2AJBuUbwKQ6CK-QaQ4tQ_CrkTAEFMqBtsxyHDFU5Kb25LNan1hMSoZZvGRvpMjt2jNK_dB993zwrxATr0vP5ark2GQI-SkA9gLMrdm2"/>
+<div class="p-8">
+<h3 class="text-3xl font-bold mb-4 text-text dark:text-text-dark">Project Sentient: Revolutionizing Customer Engagement</h3>
+<p class="text-lg text-secondary dark:text-gray-400 mb-6 leading-relaxed">Details of how the enterprise-level conversational AI platform was architected and deployed, leading to a significant 40% improvement in customer support efficiency.</p>
+<a class="text-primary font-semibold text-lg hover:underline flex items-center" href="#">
+            Read Case Study <span class="material-icons ml-2">arrow_right_alt</span>
+</a>
+</div>
+</div>
+<div class="bg-card dark:bg-card-dark rounded-xl shadow-custom-light dark:shadow-custom-dark overflow-hidden border border-border dark:border-border-dark">
+<img alt="Case Study 2: Real-time Financial Anomaly Detection" class="w-full h-72 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmBrCRgFcpw2KCUVVzMogOPkkgwy2mgA6w2n8qNhlUNwGQWmuiQSswMsYFLZLT2KTL0FCDkOhzeLplNsnwYzOuKE_-V1yJkmsUX-hhk_YIEo2Ch2lBLFOkn5jn7bzWf4RwpfsB35h6On9eMaJ2BEG-ziOgLAwFpcnNCYNC8C6BZlLRnBZUK2jmgsRcXw4sHvHKN6UvDDXksy4K7CkljpzWJsxDNlYYRbQoy8HNjZ1VZ6wQX4fdawUy9Io0NXtx4OImUBZE97Ko32hG"/>
+<div class="p-8">
+<h3 class="text-3xl font-bold mb-4 text-text dark:text-text-dark">Insight Engine: Safeguarding Financial Integrity</h3>
+<p class="text-lg text-secondary dark:text-gray-400 mb-6 leading-relaxed">An in-depth look at the real-time anomaly detection system for financial transactions, outlining the technological approach that prevented millions in fraudulent activity.</p>
+<a class="text-primary font-semibold text-lg hover:underline flex items-center" href="#">
+            Read Case Study <span class="material-icons ml-2">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-card dark:bg-card-dark" id="contact">
+<div class="container mx-auto px-6 max-w-5xl text-center">
+<h2 class="text-4xl lg:text-5xl font-bold mb-6 text-text dark:text-text-dark">Let's Collaborate</h2>
+<p class="text-xl text-secondary dark:text-gray-400 mb-12 leading-relaxed">I am actively seeking opportunities to apply cutting-edge AI to solve impactful problems. Reach out to discuss potential collaborations or explore innovative solutions.</p>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+<a class="bg-primary text-white font-bold py-4 px-10 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-300 text-xl inline-flex items-center shadow-lg" href="mailto:johan.ai.expert@email.com">
+<span class="material-icons mr-4 text-2xl">email</span> Reach Out
+        </a>
+<div class="flex space-x-8">
+<a class="text-secondary hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors text-3xl" href="#">
+<svg aria-hidden="true" class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.286 2.864 7.92 6.721 9.143.49.09.668-.212.668-.472 0-.232-.008-.848-.013-1.666-2.782.604-3.37-1.34-3.37-1.34-.446-1.134-1.088-1.436-1.088-1.436-.89-.608.068-.596.068-.596.984.07 1.503 1.01 1.503 1.01.874 1.498 2.292 1.065 2.852.814.09-.633.342-1.065.62-1.31-2.176-.248-4.464-1.088-4.464-4.842 0-1.07.382-1.944 1.01-2.628-.1-.248-.438-1.242.096-2.59 0 0 .823-.264 2.7 1.004A9.444 9.444 0 0112 6.27c.805 0 1.61.108 2.36.324 1.875-1.268 2.696-1.004 2.696-1.004.536 1.348.198 2.342.098 2.59.63.684 1.01 1.558 1.01 2.628 0 3.766-2.292 4.59-4.478 4.832.35.303.664.9.664 1.814 0 1.31-.012 2.37-.012 2.692 0 .262.176.566.674.47C19.14 19.92 22 16.286 22 12c0-5.523-4.477-10-10-10z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-secondary hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors text-3xl" href="#">
+<svg aria-hidden="true" class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-background-dark text-background-light py-8">
+<div class="container mx-auto px-6 text-center">
+<p class="text-lg">© 2024 Johan. All Rights Reserved.</p>
+</div>
+</footer>
+<script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlEl = document.documentElement;
+    const lightModeIcon = themeToggle.querySelector('span:not(.hidden)');
+    const darkModeIcon = themeToggle.querySelector('span.hidden');
+
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        htmlEl.classList.add('dark');
+        darkModeIcon.classList.remove('hidden');
+        lightModeIcon.classList.add('hidden');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        htmlEl.classList.remove('dark');
+        lightModeIcon.classList.remove('hidden');
+        darkModeIcon.classList.add('hidden');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+
+    themeToggle.addEventListener('click', () => {
+      if (htmlEl.classList.contains('dark')) {
+        applyTheme('light');
+      } else {
+        applyTheme('dark');
+      }
+    });
+
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (savedTheme === 'dark' || (!savedTheme && prefersDarkMode)) {
+      applyTheme('dark');
+    } else {
+      applyTheme('light');
+    }
+  </script>
+
+</body></html>
